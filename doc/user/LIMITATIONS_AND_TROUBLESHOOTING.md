@@ -11,7 +11,7 @@ Here is a non exhaustive list of F3D limitations:
 * The `--camera-zoom-factor` option require VTK >= 9.3.0
 
 ## Assimp
-FBX, DAE, OFF, and DXF file formats rely on [Assimp](https://github.com/assimp/assimp) library. It comes with some known limitations:
+FBX, DAE, OFF, DXF and X file formats rely on [Assimp](https://github.com/assimp/assimp) library. It comes with some known limitations:
 - PBR materials are not supported for FBX file format.
 - Complex animations are not working very well with Assimp 5.1, it's recommended to use Assimp 5.0 for this use case.
 - Only one animation can be shown at a time, showing all animations is not supported yet.
@@ -24,6 +24,17 @@ ABC file formats rely on [Alembic](https://github.com/alembic/alembic) library. 
 - Does not support ArbGeomParam feature in Alembic.
 - Does not support Subdivision Meshes.
 - Does not support Materials.
+- Does not support Animations.
+
+## USD
+USD file formats rely on [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) library. It comes with some known limitations:
+- Skinning is slow and baked on the CPU.
+- Does not support Face-varying attributes.
+
+## VDB
+VDB file formats rely on [OpenVDB](https://github.com/AcademySoftwareFoundation/openvdb) and VTK libraries. It currently comes with some known limitations:
+- Not tested in continuous integration on macOS and not shipped in the binary release for macOS arm nor in the Python wheels.
+- VDB Grid files are opened with a hard-coded 0.1 sampling rate.
 
 # Troubleshooting
 

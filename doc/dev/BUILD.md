@@ -13,6 +13,7 @@ please take a look at our [getting started guide](GETTING_STARTED.md).
 * Optionally, [Assimp](https://www.assimp.org/) >= 5.0.
 * Optionally, Open CASCADE [OCCT](https://dev.opencascade.org/) >= 7.5.2.
 * Optionally, [Alembic](http://www.alembic.io/) >= 1.7.
+* Optionally, [OpenUSD](https://openusd.org/release/index.html) >= 23.05.
 * Optionally, [Draco](https://google.github.io/draco/) >= 1.5.
 * Optionally, [Python](https://www.python.org/) >= 3.6 and [pybind11](https://github.com/pybind/pybind11) >= 2.2.
 * Optionally, [Java](https://www.java.com) >= 18.
@@ -42,7 +43,7 @@ Some modules, plugins and bindings depending on external libraries can be option
 * `F3D_MODULE_EXR`: Support for OpenEXR images. Requires `OpenEXR`. Disabled by default.
 * `F3D_PLUGIN_BUILD_EXODUS`: Support for ExodusII (.ex2) file format. Requires that VTK has been built with `IOExodus` module (and `hdf5`). Enabled by default.
 * `F3D_PLUGIN_BUILD_OCCT`: Support for STEP and IGES file formats. Requires `OpenCASCADE`. Disabled by default.
-* `F3D_PLUGIN_BUILD_ASSIMP`: Support for FBX, DAE, OFF and DXF file formats. Requires `Assimp`. Disabled by default.
+* `F3D_PLUGIN_BUILD_ASSIMP`: Support for FBX, DAE, OFF, DXF and X file formats. Requires `Assimp`. Disabled by default.
 * `F3D_PLUGIN_BUILD_ALEMBIC`: Support for ABC file format. Requires `Alembic`. Disabled by default.
 * `F3D_PLUGIN_BUILD_DRACO`: Support for DRC file format. Requires `Draco`. Disabled by default.
 * `F3D_BINDINGS_PYTHON`: Generate python bindings (requires `Python` and `pybind11`). Disabled by default.
